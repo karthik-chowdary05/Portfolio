@@ -293,7 +293,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       
       if (isValid) {
-        // Mocking message sending
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const origContent = submitBtn.innerHTML;
         
@@ -303,15 +302,44 @@ document.addEventListener('DOMContentLoaded', () => {
           lucide.createIcons();
         }
         
-        setTimeout(() => {
+        const formData = {
+          name: document.getElementById('formName').value,
+          email: document.getElementById('formEmail').value,
+          phone: document.getElementById('formPhone').value,
+          message: document.getElementById('formMessage').value,
+          _subject: `New Portfolio Message from ${document.getElementById('formName').value}`,
+          _captcha: "false"
+        };
+
+        fetch("https://formsubmit.co/ajax/srikarthikmanne@gmail.com", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify(formData)
+        })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
           showToast('Thank you! Your message was sent successfully.');
           contactForm.reset();
+        })
+        .catch(error => {
+          console.error('Error submitting form:', error);
+          showToast('Oops! Something went wrong. Please try again.', 'error');
+        })
+        .finally(() => {
           submitBtn.disabled = false;
           submitBtn.innerHTML = origContent;
           if (typeof lucide !== 'undefined') {
             lucide.createIcons();
           }
-        }, 1500);
+        });
       } else {
         showToast('Please fix the errors in the form.', 'error');
       }

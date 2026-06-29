@@ -1,0 +1,119 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 4 0 R /F2 6 0 R >> >> /MediaBox [0 0 612 792] /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 2975 >>
+stream
+BT
+/F2 18 Tf
+1.2 LH
+200 735 Td
+(SRI KARTHIK MANNE) Tj
+/F1 9 Tf
+-110 -16 Td
+(Bengaluru, India   |   Email: srikarthikmanne@gmail.com   |   Phone: +91 9008510099) Tj
+30 -12 Td
+(GitHub: github.com/karthik-chowdary05   |   LinkedIn: linkedin.com/in/srikarthikmanne05) Tj
+/F2 11 Tf
+-120 -25 Td
+(CAREER OBJECTIVE) Tj
+/F1 9.5 Tf
+0 -14 Td
+(Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning, with) Tj
+0 -12 Td
+(hands-on experience in full-stack web development, software engineering, and AI/ML model development.) Tj
+0 -12 Td
+(Skilled in Python, Java, TypeScript, React, Next.js, Node.js, SQL. Seeking Software Engineer or AI/ML role.) Tj
+/F2 11 Tf
+0 -20 Td
+(EDUCATION) Tj
+/F2 9.5 Tf
+0 -14 Td
+(Jain \(Deemed-to-be\) University, Bengaluru, Karnataka) Tj
+/F1 9.5 Tf
+0 -12 Td
+(B.Tech in Computer Science Engineering - Artificial Intelligence & Machine Learning \(AIML\) | May 2027) Tj
+0 -11 Td
+(- CGPA: 7.2/10 \(through Semester 5\)   |   Concentration: Artificial Intelligence and Machine Learning) Tj
+0 -11 Td
+(- Coursework: Data Structures, OOPs, Databases, Full Stack Dev, Operating Systems) Tj
+/F2 11 Tf
+0 -20 Td
+(TECHNICAL SKILLS) Tj
+/F1 9 Tf
+0 -14 Td
+(Programming: Python, Java, TypeScript, JavaScript, SQL, HTML, CSS) Tj
+0 -11 Td
+(Web & Databases: React, Next.js, TailwindCSS, Node.js, Flask, PostgreSQL, Prisma, Supabase, MySQL) Tj
+0 -11 Td
+(Data & AI Tools: Pandas, NumPy, Matplotlib, Deep Learning, Transfer Learning, spaCy, LLaMA 3, Gemini) Tj
+0 -11 Td
+(Tools & Soft Skills: Git, GitHub, Vercel, VS Code, Zod, Recharts, Postman, Problem Solving, Analytics) Tj
+/F2 11 Tf
+0 -20 Td
+(PROJECTS) Tj
+/F2 9.5 Tf
+0 -14 Td
+(Farmland ERP | Full-Stack Developer \(Jan 2026 - Present\)) Tj
+/F1 9 Tf
+0 -12 Td
+(- Tech Stack: Next.js 15, React 19, TypeScript, PostgreSQL, Prisma, Supabase, Tailwind, Recharts, Zod) Tj
+0 -11 Td
+(- Architected a full-stack ERP web app covering labor, assets, land/crop, finances, and analytics modules.) Tj
+0 -11 Td
+(- Designed database schema with Prisma ORM to manage attendance, salaries, and advances with Supabase.) Tj
+0 -11 Td
+(- Built utilization metrics with Recharts and developed PDF reports and Excel exports.) Tj
+/F2 9.5 Tf
+0 -16 Td
+(Smart Cart for Shopping | IoT & Mobile Developer \(Sept 2024 - April 2026\)) Tj
+/F1 9 Tf
+0 -12 Td
+(- Tech Stack: Arduino, ESP32, RFID, HX711 Load Cell, LCD, Firebase, MySQL, Java, Kotlin, Android Studio) Tj
+0 -11 Td
+(- Engineered IoT-based smart shopping cart for automated product detection, weighing, and billing.) Tj
+0 -11 Td
+(- Integrated Firebase/MySQL for inventory sync and developed Android app with payment gateway.) Tj
+/F2 11 Tf
+0 -20 Td
+(CERTIFICATIONS) Tj
+/F1 9 Tf
+0 -14 Td
+(- Machine Learning, Artificial Intelligence, Deep Learning, and Computer Vision - Coursera) Tj
+0 -11 Td
+(- Build Your Own Static Website and Build Your Own Responsive Website - NxtWave) Tj
+0 -11 Td
+(- Global FDP on Data Science and Machine Learning - FET, Jain University) Tj
+ET
+endstream
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000000 00000 n 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000321 00000 n 
+0000000396 00000 n 
+0000000430 00000 n 
+0000003405 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+3423
+%%EOF

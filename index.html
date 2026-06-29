@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Sri Karthik Manne's Personal Portfolio. Computer Science Engineering Student specializing in AIML.">
+  <title>Sri Karthik Manne | Welcome</title>
+  
+  <!-- Google Fonts - Poppins & Inter -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700;800&display=swap">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    :root {
+      /* Dark Theme variables by default for the premium welcome screen */
+      --bg: #090D1A;
+      --bg-gradient: linear-gradient(135deg, #090D1A 0%, #030712 100%);
+      --text-primary: #F8FAFC;
+      --text-secondary: #94A3B8;
+      --primary: #3B82F6;
+      --accent: #38BDF8;
+      --glow-color: rgba(56, 189, 248, 0.15);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    body.light-theme {
+      --bg: #F8FAFC;
+      --bg-gradient: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 100%);
+      --text-primary: #0F172A;
+      --text-secondary: #475569;
+      --primary: #2563EB;
+      --accent: #0284C7;
+      --glow-color: rgba(37, 99, 235, 0.1);
+      --border-color: rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-primary);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      perspective: 1000px;
+      transition: background 0.8s ease, color 0.8s ease;
+    }
+
+    /* Screen transition animation */
+    body.fade-out-active {
+      animation: pageTransition 0.6s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+    }
+
+    @keyframes pageTransition {
+      to {
+        opacity: 0;
+        transform: scale(0.96) translateY(-10px);
+        filter: blur(10px);
+      }
+    }
+
+    /* Glowing decorative backgrounds */
+    .glow-blob {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      filter: blur(120px);
+      z-index: 1;
+      opacity: 0.2;
+      pointer-events: none;
+    }
+
+    .glow-blob-1 {
+      background: var(--primary);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: pulse 8s ease-in-out infinite alternate;
+    }
+
+    @keyframes pulse {
+      0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.15; }
+      100% { transform: translate(-50%, -50%) scale(1.15); opacity: 0.25; }
+    }
+
+    /* Welcome Container */
+    .welcome-card {
+      text-align: center;
+      z-index: 10;
+      padding: 40px;
+      max-width: 600px;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    /* Interactive Logo Element */
+    .logo-container {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 110px;
+      height: 110px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid var(--border-color);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .logo-container::before {
+      content: '';
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      right: -4px;
+      bottom: -4px;
+      border-radius: 34px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      z-index: -1;
+      opacity: 0.15;
+      transition: var(--transition);
+    }
+
+    .logo-container:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 25px 50px var(--glow-color);
+    }
+
+    .logo-container:hover::before {
+      opacity: 0.4;
+      transform: scale(1.08);
+      filter: blur(8px);
+    }
+
+    /* Interactive Name Text */
+    .name-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      background: linear-gradient(to right, var(--text-primary), var(--text-secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      transition: var(--transition);
+    }
+
+    .name-title:hover {
+      transform: scale(1.03);
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 40px var(--glow-color);
+    }
+
+    /* Subtitle description */
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      max-width: 450px;
+      line-height: 1.6;
+      font-weight: 400;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    /* Dynamic Call To Action */
+    .enter-prompt {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: 0.7;
+      cursor: pointer;
+      transition: var(--transition);
+      animation: fadeIn 1.8s ease forwards;
+    }
+
+    .enter-prompt:hover {
+      opacity: 1;
+      color: var(--primary);
+    }
+
+    .bounce-arrow {
+      animation: bounce 2s infinite;
+      color: var(--primary);
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-8px); }
+      60% { transform: translateY(-4px); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 0.8; transform: translateY(0); }
+    }
+
+    /* Theme Switch Button */
+    .theme-toggle {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-color);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--text-primary);
+      cursor: pointer;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: var(--transition);
+      z-index: 100;
+    }
+
+    .theme-toggle:hover {
+      background: var(--primary);
+      color: #fff;
+      transform: scale(1.1) rotate(15deg);
+    }
+
+    .sun-icon { display: none; }
+    body.light-theme .moon-icon { display: none; }
+    body.light-theme .sun-icon { display: block; }
+
+    @media (max-width: 600px) {
+      .name-title { font-size: 2.2rem; }
+      .logo-container { width: 90px; height: 90px; font-size: 1.8rem; }
+      .subtitle { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Theme toggle switch -->
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light theme">
+    <i data-lucide="moon" class="moon-icon" aria-hidden="true"></i>
+    <i data-lucide="sun" class="sun-icon" aria-hidden="true"></i>
+  </button>
+
+  <!-- Glowing Aura background -->
+  <div class="glow-blob glow-blob-1"></div>
+
+  <!-- Welcome Container -->
+  <main class="welcome-card">
+    <div id="logoBtn" class="logo-container" role="button" aria-label="Enter Portfolio through Logo">
+      SKM
+    </div>
+    
+    <h1 id="nameBtn" class="name-title" role="button" aria-label="Enter Portfolio through Name">
+      Sri Karthik Manne
+    </h1>
+    
+    <p class="subtitle">
+      Computer Science Engineering Student Specializing in AIML | Aspiring Software Developer
+    </p>
+    
+    <div id="enterBtn" class="enter-prompt" role="button" aria-label="Click to Enter Portfolio">
+      <span>Click Logo or Name to Enter</span>
+      <i data-lucide="arrow-down" class="bounce-arrow" aria-hidden="true"></i>
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Initialize Lucide Icons
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+
+      // Check and apply cached theme state
+      const themeToggle = document.getElementById('themeToggle');
+      const cachedTheme = localStorage.getItem('theme');
+      
+      if (cachedTheme === 'light') {
+        document.body.classList.add('light-theme');
+      }
+
+      themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('light-theme');
+        const theme = document.body.classList.contains('light-theme') ? 'light' : 'dark';
+        localStorage.setItem('theme', theme);
+      });
+
+      // Navigation handler with smooth transition
+      const handleNavigation = () => {
+        document.body.classList.add('fade-out-active');
+        setTimeout(() => {
+          window.location.href = 'portfolio.html';
+        }, 500); // matches CSS animation transition time
+      };
+
+      // Bind click handlers to Name, Logo, and Enter prompt
+      document.getElementById('logoBtn').addEventListener('click', handleNavigation);
+      document.getElementById('nameBtn').addEventListener('click', handleNavigation);
+      document.getElementById('enterBtn').addEventListener('click', handleNavigation);
+    });
+  </script>
+</body>
+</html>
